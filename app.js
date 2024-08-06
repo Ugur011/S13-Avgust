@@ -8,8 +8,14 @@ let menuDrop = document.querySelector(".menu-drop");
 let number = 0;
 let price = document.querySelector('.price');
 let cost = 0;
-let toggle = false
+let toggle = false;
 
+let row1 = document.querySelector('.row1')
+let row2 = document.querySelector('.row2')
+let row3 = document.querySelector('.row3')
+let row4 = document.querySelector('.row4')
+let row5 = document.querySelector('.row5')
+let row6 = document.querySelector('.row6')
 
 menu.addEventListener('click', function () {
     if (window.getComputedStyle(menu).display === "none") {
@@ -47,7 +53,7 @@ function randomNumber() {
 }
 
 dates.forEach(element => {
-    element.addEventListener('click', function() {
+    element.addEventListener('click', function () {
         seats.forEach(element => {
             element.style.color = 'white';
         });
@@ -71,16 +77,67 @@ dates.forEach(element => {
 });
 
 seats.forEach(element => {
-    element.addEventListener('click', function() {
+    element.addEventListener('click', function () {
         let isDateSelected = Array.from(dates).some(date => date.style.backgroundColor === 'rgb(150, 35, 45)');
         if (isDateSelected && element.style.color === 'white') {
             element.style.color = 'rgb(47, 156, 207)';
-            cost = cost+40;
-            price.innerText = "Total " + "$" + cost;
+            switch (element.parentElement) {
+                case row1:
+                    cost = cost + 100;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row2:
+                    cost = cost + 90;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row3:
+                    cost = cost + 80;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row4:
+                    cost = cost + 70;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row5:
+                    cost = cost + 60;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row6:
+                    cost = cost + 50;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                default:
+                    break;
+            }
         } else if (element.style.color === 'rgb(47, 156, 207)') {
             element.style.color = 'white';
-            cost = cost-40;
-            price.innerText = "Total " + "$" + cost;
+            switch (element.parentElement) {
+                case row1:
+                    cost = cost - 100;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row2:
+                    cost = cost - 90;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row3:
+                    cost = cost - 80;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row4:
+                    cost = cost - 70;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row5:
+                    cost = cost - 60;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                case row6:
+                    cost = cost - 50;
+                    price.innerText = "Total " + "$" + cost;
+                    break;
+                default:
+                    break;
         }
-    });
-});
+    };
+})});
