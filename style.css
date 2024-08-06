@@ -140,6 +140,10 @@ button:hover {
        width: 13vw;
        left: 43.5vw;
     }
+    .reserve-btn {
+        left: 608px;
+        bottom: 60vh;
+    }
 }
 @media (min-width: 1919px) and (max-width: 1920px) {
     .more-text {
