@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.first-main-container{
+    width: 98.7vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(44, 11, 11, 0.725);
+    background-image: url(./squid\ game\ guys.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.icon-side{
+    color: white;
+    background-color: black;
+}
+
+.first-header-container{
+    text-align: center;
+}
+
+.text-container{
+    margin: 290px auto;
+    text-align: center;
+}
+
+
+span{
+    font-weight: bold;
+}
+
+
+.first-main-container h1{
+    font-size: 50px;
+}
+
+.first-main-container .date-content {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(2, 50px);
+    margin: 0px 420px auto;
+    background-color: rgb(75, 15, 21);
+    text-align: center;
+    border: solid transparent;
+    border-radius: 5px;
+    margin-top: -280px;
+}
+  
+
+.first-main-container .date-content .item {
+    width: 100px;
+    height: 100px;
+}
+  
+.reserve-btn{
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: rgb(75, 15, 21);
+    border: solid transparent;
+    border-radius: 5px;
+    position: absolute;
+    left: 590px;
+    bottom: 10px;
+}
