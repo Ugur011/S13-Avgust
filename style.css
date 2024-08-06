@@ -141,7 +141,7 @@ button:hover {
        left: 43.5vw;
     }
 }
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
     .more-text {
         left: 30vw;
     }
