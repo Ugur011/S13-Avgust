@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
 }
 
 body {
@@ -16,6 +15,7 @@ body {
     background-size: 100vw;
     background-blend-mode: darken;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .first-main-container {
@@ -112,4 +112,50 @@ span {
 }
 .item:hover {
     cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+    .item {
+        position: relative;
+        bottom: 5vh;
+        margin: 0 auto;
+        right: 3vw;
+    }
+    .text-container {
+        margin: 0 auto;
+        position: relative;
+        top: 40vh;
+    }
+    .readmore1,.more-text {
+        position: relative;
+        bottom: 4vh;
+    }
+    .select-time {
+        position: absolute;
+       top: 55vh;
+       width: 13vw;
+       left: 43.5vw;
+    }
+}
+@media (max-width: 1920px) {
+    .more-text {
+        left: 30vw;
+    }
+    .item {
+        position: relative;
+        left: 11vw;
+    }
+    .select-time {
+        position: absolute;
+        width: 13vw;
+       left: 45vw;
+       bottom: 48.5vh;
+    }
+    .reserve-btn {
+        left: 865px;
+    }
 }
