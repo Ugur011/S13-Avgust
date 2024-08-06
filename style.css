@@ -132,11 +132,11 @@ button:hover {
     }
     .readmore1,.more-text {
         position: relative;
-        bottom: 4vh;
+        bottom: 7vh;
     }
     .select-time {
         position: absolute;
-       top: 55vh;
+       top: 51vh;
        width: 13vw;
        left: 43.5vw;
     }
