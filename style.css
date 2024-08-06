@@ -13,8 +13,9 @@ body {
     background: url(./img/background.jpeg);
     background-color: rgba(44, 11, 11, 0.592);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw;
     background-blend-mode: darken;
+    background-attachment: fixed;
 }
 
 .first-main-container {
