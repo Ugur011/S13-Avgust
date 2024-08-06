@@ -183,6 +183,11 @@ button:hover {
     height:557px;
     object-fit: contain;
 }
+
+.fa-couch:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 1365px) and (max-width: 1367px) {
     .item {
         position: relative;
