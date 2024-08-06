@@ -110,3 +110,6 @@ span {
     top: 680px;
     left: 650px;
 }
+.item:hover {
+    cursor: pointer;
+}
