@@ -171,3 +171,11 @@ button:hover {
         bottom: 41vh;
     }
 }
+@media (min-height: 1079px) and (max-height: 1090px) {
+    .select-time {
+        position: absolute;
+        width: 13vw;
+       left: 45vw;
+       bottom: 54.5vh;
+    }
+}
