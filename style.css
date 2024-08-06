@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,69 +9,103 @@
 
 }
 
-.first-main-container{
-    width: 98.7vw;
-    height: 100vh;
-    color: white;
-    background-color: rgba(44, 11, 11, 0.725);
-    background-image: url(./squid\ game\ guys.jpg);
-    background-blend-mode: darken;
-    background-size: cover;
+body {
+    background: url(./img/background.jpeg);
+    background-color: rgba(44, 11, 11, 0.592);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.first-main-container {
     position: relative;
-}
-
-.icon-side{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 30px;
     color: white;
-    background-color: black;
+    border-bottom: rgb(110, 20, 13) solid 2px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.108) 100%);
 }
 
-.first-header-container{
+.icon-side {
+    font-size: 40px;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.first-header-container {
     text-align: center;
 }
 
-.text-container{
+.text-container {
     margin: 290px auto;
     text-align: center;
 }
 
 
-span{
+span {
     font-weight: bold;
 }
-
-
-.first-main-container h1{
+.select-time{
+    display: block;
+    margin-top: 18px;
+}
+.read-more{
+    font-weight: lighter;
+    color: rgb(255, 234, 234);
+    cursor: pointer;
+}
+.read-more::selection{
+    background-color: rgba(255, 255, 255, 0);
+}
+.more-text{
+    display: none;
+    width: 740px;
+    position: absolute;
+    left: 350px;
+}
+.first-main-container h1 {
     font-size: 50px;
 }
 
-.first-main-container .date-content {
-    width: fit-content;
-    display: grid;
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(2, 50px);
-    margin: 0px 420px auto;
-    background-color: rgb(75, 15, 21);
+.date-content {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
     text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 430px;
     border: solid transparent;
-    border-radius: 5px;
-    margin-top: -280px;
+    padding: 10px;
 }
-  
+
 
 .first-main-container .date-content .item {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(75, 15, 21);
 }
-  
-.reserve-btn{
+
+.reserve-btn {
     width: 150px;
     height: 40px;
+    font-size: 15px;
     color: white;
     background-color: rgb(75, 15, 21);
     border: solid transparent;
     border-radius: 5px;
     position: absolute;
-    left: 590px;
-    bottom: 10px;
+    top: 680px;
+    left: 650px;
 }
