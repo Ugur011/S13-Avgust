@@ -5,6 +5,7 @@ let dates = document.querySelectorAll(".item");
 let seats = document.querySelectorAll('.fa-couch');
 let menu = document.querySelector(".menu-shrink");
 let menuDrop = document.querySelector(".menu-drop");
+let reserveBtn = document.querySelector(".reserve-btn");
 let number = 0;
 let price = document.querySelector('.price');
 let cost = 0;
@@ -18,8 +19,8 @@ let row5 = document.querySelector('.row5')
 let row6 = document.querySelector('.row6')
 
 menu.addEventListener('click', function () {
-    if (window.getComputedStyle(menu).display === "none") {
-        menuDrop.style.display = "block"
+    if (menuDrop.style.display === "none" || menuDrop.style.display === "") {
+        menuDrop.style.display = "block";
     } else {
         menuDrop.style.display = "none";
     }
@@ -59,20 +60,20 @@ dates.forEach(element => {
         });
 
         let arr = randomNumber();
-        seats[arr[0]].style.color = 'red';
-        seats[arr[1]].style.color = 'red';
-        seats[arr[2]].style.color = 'red';
-        seats[arr[3]].style.color = 'red';
-        seats[arr[4]].style.color = 'red';
-        seats[arr[5]].style.color = 'red';
-        seats[arr[6]].style.color = 'red';
-        seats[arr[7]].style.color = 'red';
-        seats[arr[8]].style.color = 'red';
-        seats[arr[9]].style.color = 'red';
-        seats[arr[10]].style.color = 'red';
-        seats[arr[11]].style.color = 'red';
-        seats[arr[12]].style.color = 'red';
-        seats[arr[13]].style.color = 'red';
+        seats[arr[0]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[1]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[2]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[3]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[4]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[5]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[6]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[7]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[8]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[9]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[10]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[11]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[12]].style.color = 'rgba(180, 10, 50, 1)';
+        seats[arr[13]].style.color = 'rgba(180, 10, 50, 1)';
     })
 });
 
@@ -138,6 +139,34 @@ seats.forEach(element => {
                     break;
                 default:
                     break;
-        }
-    };
-})});
+            }
+        };
+    })
+});
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

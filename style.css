@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
     color: white;
     margin: 10px;
     position: absolute;
+    z-index: 9999;
     right: 0;
     top: -5px;
 }
@@ -41,7 +43,6 @@ body {
 .first-header-container {
     text-align: center;
 }
-
 .text-container {
     margin: 290px auto;
     text-align: center;
@@ -146,11 +147,23 @@ button:hover {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    span{
+        font-weight: 400;
+    }
 }
 .status-side{
     width: 30vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+.confirm-btn{
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(75, 15, 21);
+    border: solid transparent;
+    border-radius: 5px;
 }
 .seats{
     width: 30vw;
@@ -168,9 +181,9 @@ button:hover {
 }
 .third-main-container{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -184,33 +197,121 @@ button:hover {
     height:557px;
     object-fit: contain;
 }
-
+.third-bottom-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    *{
+        margin: 10px;
+    }
+}
+.third-bottom-content a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(110, 20, 13);
+    border-radius: 100%;
+}
 .fa-couch:hover {
     cursor: pointer;
 }
 
 .menu-drop{
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-direction: column;
     position: absolute;
     font-size: 20px;
     width: 165px;
-    height: 200px;
+    height: 210px;
     top: 30px;
     right: 50px;
     background-color: rgb(134, 24, 16);
     border: rgb(110, 18, 12) 1px solid;
     border-radius: 8px;
 }
-
+.menu-shrink{
+    padding: 5px;
+}
 .menu-drop li {
     border: rgb(110, 18, 12) 1px solid;
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    *{
+        padding: 15px;
+    }
 }
 .menu-drop a{
     text-decoration: none;
     color: white;
+}
+
+[class*=round]{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+}
+.round-1{
+    background-color: #ebebeb;
+}
+.round-2{
+    background-color: rgba(180, 10, 50, 1);
+}
+.round-3{
+    background-color: rgb(47, 156, 207);
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    height: 80vh;
+  background-color: #d43b3b;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn{
+    cursor: pointer;
 }
 @media (min-width: 1365px) and (max-width: 1367px) {
     .item {
