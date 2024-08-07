@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    list-style: none;
 }
 
 body {
@@ -188,6 +189,28 @@ button:hover {
     cursor: pointer;
 }
 
+.menu-drop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    font-size: 20px;
+    width: 165px;
+    height: 200px;
+    top: 30px;
+    right: 50px;
+    background-color: rgb(134, 24, 16);
+    border: rgb(110, 18, 12) 1px solid;
+    border-radius: 8px;
+}
+.menu-drop li {
+    border: rgb(110, 18, 12) 1px solid;
+    height: 70px;
+}
+.menu-drop a{
+    text-decoration: none;
+    color: white;
+}
 @media (min-width: 1365px) and (max-width: 1367px) {
     .item {
         position: relative;

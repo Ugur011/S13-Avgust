@@ -3,11 +3,21 @@ let more = document.querySelector(".more-text");
 let selectTime = document.querySelector(".select-time");
 let dates = document.querySelectorAll(".item");
 let seats = document.querySelectorAll('.fa-couch');
+let menu = document.querySelector(".menu-shrink");
+let menuDrop = document.querySelector(".menu-drop");
 let number = 0;
 let price = document.querySelector('.price');
 let cost = 0;
-
 let toggle = false
+
+
+menu.addEventListener('click', function () {
+    if (window.getComputedStyle(menu).display === "none") {
+        menuDrop.style.display = "block"
+    } else {
+        menuDrop.style.display = "none";
+    }
+});
 
 read.addEventListener('click', function () {
     if (window.getComputedStyle(more).display === "none") {
