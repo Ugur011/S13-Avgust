@@ -118,7 +118,7 @@ button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1365px) and (max-width: 1367px) {
     .item {
         position: relative;
         bottom: 5vh;
@@ -141,7 +141,7 @@ button:hover {
        left: 43.5vw;
     }
 }
-@media (max-width: 1920px) {
+@media (min-width: 1919px) and (max-width: 1920px) {
     .more-text {
         left: 30vw;
     }
@@ -157,5 +157,13 @@ button:hover {
     }
     .reserve-btn {
         left: 865px;
+    }
+}
+
+@media (min-width:1469px) and (max-width:1471px) {
+    .select-time {
+        position: absolute;
+        left: 43.5vw;
+        bottom: 48vh;
     }
 }
