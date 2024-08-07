@@ -344,6 +344,16 @@ button:hover {
         left: 608px;
         bottom: 60vh;
     }
+
+    
+    .seats{
+        width: 25vw;
+    }
+
+    .row2, .row3, .row4, .row5, .row6{
+        width: 40vw;
+        margin-left: 8vw;
+    }
 }
 
 @media (min-width: 1919px) and (max-width: 1920px) {
