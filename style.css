@@ -179,47 +179,6 @@ button:hover {
     line-height: 55px;
     letter-spacing: 5px;
 }
-.third-main-container{
-    width: 100vw;
-    height: 120vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-.third-main-container header{
-    font-size: 23px;
-    text-align: center;
-    color: white;
-}
-.third-content img{
-    width: 330px;
-    height:557px;
-    object-fit: contain;
-}
-.third-bottom-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    *{
-        margin: 10px;
-    }
-}
-.third-bottom-content a {
-    display: block;
-    width: 80px;
-    height: 80px;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: rgb(110, 20, 13);
-    border-radius: 100%;
-}
 .fa-couch:hover {
     cursor: pointer;
 }
