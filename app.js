@@ -6,17 +6,21 @@ let seats = document.querySelectorAll('.fa-couch');
 let menu = document.querySelector(".menu-shrink");
 let menuDrop = document.querySelector(".menu-drop");
 let reserveBtn = document.querySelector(".reserve-btn");
+let modale = document.querySelector("modal");
+let modale1 = document.querySelector("modal1")
+let purchaseBtn = document.querySelector('.purchase--btn');
 let number = 0;
 let price = document.querySelector('.price');
 let cost = 0;
 let toggle = false;
 
-let row1 = document.querySelector('.row1')
-let row2 = document.querySelector('.row2')
-let row3 = document.querySelector('.row3')
-let row4 = document.querySelector('.row4')
-let row5 = document.querySelector('.row5')
-let row6 = document.querySelector('.row6')
+let row1 = document.querySelector('.row1');
+let row2 = document.querySelector('.row2');
+let row3 = document.querySelector('.row3');
+let row4 = document.querySelector('.row4');
+let row5 = document.querySelector('.row5');
+let row6 = document.querySelector('.row6');
+
 
 menu.addEventListener('click', function () {
     if (menuDrop.style.display === "none" || menuDrop.style.display === "") {
@@ -29,10 +33,12 @@ menu.addEventListener('click', function () {
 read.addEventListener('click', function () {
     if (window.getComputedStyle(more).display === "none") {
         more.style.display = "block"
-        selectTime.style.marginTop = "48px"
+        read.innerHTML = "Less"
+        // selectTime.style.marginTop = "48px"
     } else {
         more.style.display = "none";
-        selectTime.style.marginTop = "18px"
+        read.innerHTML = "More"
+        // selectTime.style.marginTop = "18px"
     }
 });
 
@@ -170,3 +176,41 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
+// Get the modal
+var modal1 = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+window.onload = function () {
+    let purchaseBtn = document.querySelector('.purchase--btn');
+    if (purchaseBtn) {
+        purchaseBtn.addEventListener('click', function () {
+            window.location.href = 'index2.html';
+        });
+    } else {
+        console.error('Element with class "purchase--btn" not found.');
+    }
+};

@@ -19,6 +19,7 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
 .first-main-container {
     position: relative;
     width: 100vw;
@@ -43,6 +44,7 @@ body {
 .first-header-container {
     text-align: center;
 }
+
 .text-container {
     margin: 290px auto;
     text-align: center;
@@ -124,7 +126,8 @@ span {
 button:hover {
     cursor: pointer;
 }
-.second-main-container{
+
+.second-main-container {
     position: relative;
     width: 100vw;
     height: 50vw;
@@ -137,27 +140,33 @@ button:hover {
     background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.108) 100%);
 }
-.second-header-container{
+
+.second-header-container {
     text-align: center;
 }
-.second-header-container h1{
+
+.second-header-container h1 {
     margin: 30px;
 }
-.second-bottom-content{
+
+.second-bottom-content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    span{
+
+    span {
         font-weight: 400;
     }
 }
-.status-side{
+
+.status-side {
     width: 30vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.confirm-btn{
+
+.confirm-btn {
     height: 40px;
     font-size: 15px;
     color: white;
@@ -165,7 +174,8 @@ button:hover {
     border: solid transparent;
     border-radius: 5px;
 }
-.seats{
+
+.seats {
     width: 30vw;
     height: 20vh;
     margin-bottom: 100px;
@@ -174,16 +184,18 @@ button:hover {
     align-items: center;
     flex-direction: column;
 }
-.seats i{
+
+.seats i {
     font-size: 30px;
     line-height: 55px;
     letter-spacing: 5px;
 }
+
 .fa-couch:hover {
     cursor: pointer;
 }
 
-.menu-drop{
+.menu-drop {
     display: none;
     justify-content: space-between;
     flex-direction: column;
@@ -197,81 +209,258 @@ button:hover {
     border: rgb(110, 18, 12) 1px solid;
     border-radius: 8px;
 }
-.menu-shrink{
+
+.menu-shrink {
     padding: 5px;
 }
+
 .menu-drop li {
     border: rgb(110, 18, 12) 1px solid;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    *{
+
+    * {
         padding: 15px;
     }
 }
-.menu-drop a{
+
+.menu-drop a {
     text-decoration: none;
     color: white;
 }
 
-[class*=round]{
+[class*=round] {
     width: 18px;
     height: 18px;
     border-radius: 100%;
 }
-.round-1{
+
+.round-1 {
     background-color: #ebebeb;
 }
-.round-2{
+
+.round-2 {
     background-color: rgba(180, 10, 50, 1);
 }
-.round-3{
+
+.round-3 {
     background-color: rgb(47, 156, 207);
 }
 
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    .get-ticket{
+        position: absolute;
+        top: 135px;
+        left: 236px;
+        font-size: xx-large;
+
+    }
 }
 
 /* Modal Content */
 .modal-content {
     height: 80vh;
-  background-color: #d43b3b;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+    background-color: #d43b3b;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
 /* The Close Button */
+.close1,
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-#myBtn{
+    color: #aaaaaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
     cursor: pointer;
 }
+
+.close1,
+.close:hover,
+.close1,
+.close :focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+    cursor: pointer;
+}
+
+/* From Uiverse.io by zanina-yassine */
+.card {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+    width: fit-content;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+    max-width: 450px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.payment--options {
+    width: calc(100% - 40px);
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    gap: 20px;
+    padding: 10px;
+}
+
+.payment--options button {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+.payment--options button svg {
+    height: 18px;
+}
+
+.payment--options button:last-child svg {
+    height: 22px;
+}
+
+.separator {
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    color: #8B8E98;
+    margin: 0 10px;
+}
+
+.separator>p {
+    word-break: keep-all;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 11px;
+    margin: auto;
+}
+
+.separator .line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: #e8e8e8;
+    margin: auto;
+}
+
+.credit-card-info--form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 15px;
+}
+
+.split input {
+    width: 100%;
+}
+
+.input_label {
+    font-size: 10px;
+    color: #8B8E98;
+    font-weight: 600;
+}
+
+.input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 9px;
+    outline: none;
+    background-color: #F2F2F2;
+    border: 1px solid #e5e5e500;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 0px 2px #242424;
+    background-color: transparent;
+}
+
+.purchase--btn {
+    height: 55px;
+    background: #F2F2F2;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #363636 0%, #1B1B1B 50%, #000000 100%);
+    box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.purchase--btn:hover {
+    box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
+}
+
+/* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input_field[type=number] {
+    -moz-appearance: textfield;
+}
+
 @media (min-width: 1365px) and (max-width: 1367px) {
     .item {
         position: relative;
@@ -304,12 +493,16 @@ button:hover {
         bottom: 60vh;
     }
 
-    
-    .seats{
+
+    .seats {
         width: 25vw;
     }
 
-    .row2, .row3, .row4, .row5, .row6{
+    .row2,
+    .row3,
+    .row4,
+    .row5,
+    .row6 {
         width: 40vw;
         margin-left: 8vw;
     }
