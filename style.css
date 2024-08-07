@@ -25,8 +25,8 @@ body {
     margin-top: 30px;
     color: white;
     border-bottom: rgb(110, 20, 13) solid 2px;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.108) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.108) 100%);
 }
 
 .icon-side {
@@ -51,24 +51,29 @@ body {
 span {
     font-weight: bold;
 }
-.select-time{
+
+.select-time {
     display: block;
     margin-top: 18px;
 }
-.read-more{
+
+.read-more {
     font-weight: lighter;
     color: rgb(255, 234, 234);
     cursor: pointer;
 }
-.read-more::selection{
+
+.read-more::selection {
     background-color: rgba(255, 255, 255, 0);
 }
-.more-text{
+
+.more-text {
     display: none;
     width: 740px;
     position: absolute;
     left: 350px;
 }
+
 .first-main-container h1 {
     font-size: 50px;
 }
@@ -110,6 +115,7 @@ span {
     top: 680px;
     left: 650px;
 }
+
 .item:hover {
     cursor: pointer;
 }
@@ -118,6 +124,24 @@ button:hover {
     cursor: pointer;
 }
 
+.third-main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.third-main-container header{
+    font-size: 23px;
+    text-align: center;
+    color: white;
+}
+.third-content img{
+    width: 330px;
+    height:557px;
+    object-fit: contain;
+}
 @media (min-width: 1365px) and (max-width: 1367px) {
     .item {
         position: relative;
@@ -125,40 +149,49 @@ button:hover {
         margin: 0 auto;
         right: 3vw;
     }
+
     .text-container {
         margin: 0 auto;
         position: relative;
         top: 40vh;
     }
-    .readmore1,.more-text {
+
+    .readmore1,
+    .more-text {
         position: relative;
         bottom: 7vh;
     }
+
     .select-time {
         position: absolute;
-       top: 51vh;
-       width: 13vw;
-       left: 43.5vw;
+        top: 51vh;
+        width: 13vw;
+        left: 43.5vw;
     }
+
     .reserve-btn {
         left: 608px;
         bottom: 60vh;
     }
 }
+
 @media (min-width: 1919px) and (max-width: 1920px) {
     .more-text {
         left: 30vw;
     }
+
     .item {
         position: relative;
         left: 11vw;
     }
+
     .select-time {
         position: absolute;
         width: 13vw;
-       left: 45vw;
-       bottom: 48.5vh;
+        left: 45vw;
+        bottom: 48.5vh;
     }
+
     .reserve-btn {
         left: 865px;
     }
@@ -171,11 +204,12 @@ button:hover {
         bottom: 41vh;
     }
 }
+
 @media (min-height: 1079px) and (max-height: 1090px) {
     .select-time {
         position: absolute;
         width: 13vw;
-       left: 45vw;
-       bottom: 54.5vh;
+        left: 45vw;
+        bottom: 54.5vh;
     }
 }

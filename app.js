@@ -16,7 +16,7 @@ read.addEventListener('click', function () {
 });
 
 dates.forEach(element => {
-    element.addEventListener('click', function() {
+    element.addEventListener('click', function () {
         dates.forEach(date => {
             date.style.backgroundColor = "rgb(75, 15, 21)"
         });
