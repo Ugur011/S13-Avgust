@@ -411,6 +411,10 @@ button:hover {
     margin: 0 10px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .separator>p {
     word-break: keep-all;
     display: block;
@@ -506,6 +510,50 @@ button:hover {
 
 .input_field[type=number] {
     -moz-appearance: textfield;
+}
+
+.signupbutton {
+    width: 6vw;
+    height: 5vh;
+    font-size: 1vw;
+    color: white;
+    background-color: rgb(75, 15, 21);
+    border: solid transparent;
+    border-radius: 0.5vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 7.5vw;
+    top: 52vh;
+}
+.signinbutton {
+    width: 6vw;
+    height: 5vh;
+    font-size: 1vw;
+    color: white;
+    background-color: rgb(75, 15, 21);
+    border: solid transparent;
+    border-radius: 0.5vw;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 7.5vw;
+    top: 52vh;
+    display: none;
+}
+
+.signin {
+    position: absolute;
+    left: 65vw;
+}
+
+.signin:hover {
+    cursor: pointer;
+}
+
+.menu-shrink:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 1365px) and (max-width: 1367px) {
