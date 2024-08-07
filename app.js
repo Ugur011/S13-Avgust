@@ -34,11 +34,9 @@ read.addEventListener('click', function () {
     if (window.getComputedStyle(more).display === "none") {
         more.style.display = "block"
         read.innerHTML = "Less"
-        // selectTime.style.marginTop = "48px"
     } else {
         more.style.display = "none";
         read.innerHTML = "More"
-        // selectTime.style.marginTop = "18px"
     }
 });
 
