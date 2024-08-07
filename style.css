@@ -17,7 +17,6 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
 }
-
 .first-main-container {
     position: relative;
     width: 100vw;
@@ -123,7 +122,49 @@ span {
 button:hover {
     cursor: pointer;
 }
-
+.second-main-container{
+    position: relative;
+    width: 100vw;
+    height: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-bottom: rgb(110, 20, 13) solid 2px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.108) 100%);
+}
+.second-header-container{
+    text-align: center;
+}
+.second-header-container h1{
+    margin: 30px;
+}
+.second-bottom-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.status-side{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+.seats{
+    width: 30vw;
+    height: 20vh;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seats i{
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 5px;
+}
 .third-main-container{
     width: 100vw;
     height: 100vh;
