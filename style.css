@@ -293,6 +293,44 @@ button:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+     font-size: 30px;
+}
+
+.profile-info{
+    width: 75vw;
+    height: 65vh;
+    background-color: rgb(124, 50, 50);
+    color: white;
+    position: relative;
+    border: solid transparent;
+    border-radius: 1px;
+}
+
+.profile-info img{
+    width: 30vw;
+    height: 65vh;
+    border: solid transparent;
+    border-radius: 5px;
+}
+
+.profile-content input{
+    width: 20vw;
+    height: 5vh;
+    background-color: white;
+    border: solid rgb(44, 4, 4);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.profile-content h3{
+    padding: 5px;
+}
+
+.profile-content{
+    width: 30vw;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 /* The Close Button */
