@@ -34,10 +34,10 @@ menu.addEventListener('click', function () {
 read.addEventListener('click', function () {
     if (window.getComputedStyle(more).display === "none") {
         more.style.display = "block"
-        read.innerHTML = "Less"
+        read.innerHTML = "less"
     } else {
         more.style.display = "none";
-        read.innerHTML = "More"
+        read.innerHTML = "read more"
     }
 });
 

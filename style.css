@@ -78,7 +78,7 @@ span {
 }
 
 .first-main-container h1 {
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .date-content {
@@ -292,7 +292,7 @@ button:hover {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 85%;
      font-size: 30px;
 }
 
@@ -302,35 +302,44 @@ button:hover {
     background-color: rgb(124, 50, 50);
     color: white;
     position: relative;
+    top: 3vw;
+    left: 3vw;
     border: solid transparent;
     border-radius: 1px;
 }
 
 .profile-info img{
-    width: 30vw;
+    width: 35vw;
     height: 65vh;
     border: solid transparent;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 .profile-content input{
     width: 20vw;
     height: 5vh;
-    background-color: white;
-    border: solid rgb(44, 4, 4);
+    background-color: rgb(255, 230, 230);
+    border: rgb(44, 4, 4) 1.5px solid;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 400;
 }
-
+.profile-content input::placeholder{
+    font-size: 14px;
+    color: rgb(47, 47, 47);
+}
 .profile-content h3{
     padding: 5px;
+    font-size: 25px;
 }
 
 .profile-content{
     width: 30vw;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 50px;
+    right: 80px;
 }
 
 /* The Close Button */
@@ -508,12 +517,12 @@ body {
     margin: 0;
 }
 
-.input_field[type=number] {
+/* .input_field[type=number] {
     -moz-appearance: textfield;
-}
+} */
 
-.signupbutton {
-    width: 6vw;
+.signupbutton , .signinbutton{
+    width: 17.5vw;
     height: 5vh;
     font-size: 1vw;
     color: white;
@@ -524,32 +533,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 7.5vw;
-    top: 52vh;
+    left: 1vw;
+    top: 39vh;
 }
-.signinbutton {
-    width: 6vw;
-    height: 5vh;
-    font-size: 1vw;
-    color: white;
-    background-color: rgb(75, 15, 21);
-    border: solid transparent;
-    border-radius: 0.5vw;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    left: 7.5vw;
-    top: 52vh;
-    display: none;
-}
-
 .signin {
     position: absolute;
+    z-index: 9998;
+    top: 1vw;
     left: 65vw;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .signin:hover {
     cursor: pointer;
+    background-color: #861c1cc9;
 }
 
 .menu-shrink:hover {
