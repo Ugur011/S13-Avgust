@@ -104,7 +104,9 @@ span {
     margin: 10px;
     border-radius: 5px;
     background-color: rgb(75, 15, 21);
-    *::selection , *{
+
+    *::selection,
+    * {
         background-color: #ffffff00;
         cursor: pointer;
     }
@@ -293,10 +295,10 @@ button:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 85%;
-     font-size: 30px;
+    font-size: 30px;
 }
 
-.profile-info{
+.profile-info {
     width: 75vw;
     height: 65vh;
     background-color: rgb(124, 50, 50);
@@ -308,7 +310,7 @@ button:hover {
     border-radius: 1px;
 }
 
-.profile-info img{
+.profile-info img {
     width: 35vw;
     height: 65vh;
     border: solid transparent;
@@ -316,7 +318,7 @@ button:hover {
     object-fit: cover;
 }
 
-.profile-content input{
+.profile-content input {
     width: 20vw;
     height: 5vh;
     background-color: rgb(255, 230, 230);
@@ -326,16 +328,18 @@ button:hover {
     font-size: 16px;
     font-weight: 400;
 }
-.profile-content input::placeholder{
+
+.profile-content input::placeholder {
     font-size: 14px;
     color: rgb(47, 47, 47);
 }
-.profile-content h3{
+
+.profile-content h3 {
     padding: 5px;
     font-size: 25px;
 }
 
-.profile-content{
+.profile-content {
     width: 30vw;
     position: absolute;
     top: 50px;
@@ -521,7 +525,8 @@ body {
     -moz-appearance: textfield;
 } */
 
-.signupbutton , .signinbutton{
+.signupbutton,
+.signinbutton {
     width: 17.5vw;
     height: 5vh;
     font-size: 1vw;
@@ -536,6 +541,7 @@ body {
     left: 1vw;
     top: 39vh;
 }
+
 .signin {
     position: absolute;
     z-index: 9998;
@@ -553,6 +559,8 @@ body {
 .menu-shrink:hover {
     cursor: pointer;
 }
+
+
 
 @media (min-width: 1365px) and (max-width: 1367px) {
     .item {
