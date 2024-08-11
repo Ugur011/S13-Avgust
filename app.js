@@ -22,14 +22,19 @@ let row4 = document.querySelector('.row4');
 let row5 = document.querySelector('.row5');
 let row6 = document.querySelector('.row6');
 
-
 menu.addEventListener('click', function () {
     if (menuDrop.style.display === "none" || menuDrop.style.display === "") {
         menuDrop.style.display = "block";
+        
+        setTimeout(() => {
+            menuDrop.style.display = "none";
+        }, 2200);
+        
     } else {
         menuDrop.style.display = "none";
     }
 });
+
 
 read.addEventListener('click', function () {
     if (window.getComputedStyle(more).display === "none") {
