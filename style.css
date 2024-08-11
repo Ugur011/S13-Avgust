@@ -278,10 +278,10 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.4);
 
     /* Black w/ opacity */
-    .get-ticket {
+   .get-ticket {
         position: absolute;
-        top: 135px;
-        left: 236px;
+        top: 125px;
+        left: 43vw;
         font-size: xx-large;
 
     }
@@ -289,13 +289,12 @@ button:hover {
 
 /* Modal Content */
 .modal-content {
-    height: 80vh;
+    height: 83vh;
     background-color: #d43b3b;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 85%;
-    font-size: 30px;
+    width: 55%;
 }
 
 .profile-info {
@@ -372,8 +371,8 @@ button:hover {
 /* From Uiverse.io by zanina-yassine */
 .card {
     position: absolute;
-    top: 200px;
-    left: 220px;
+    top: 175px;
+    left: 450px;
     width: fit-content;
     height: fit-content;
     background: #ffffff;
