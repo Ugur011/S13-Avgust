@@ -297,6 +297,16 @@ button:hover {
     width: 55%;
 }
 
+
+.modal-content1 {
+    height: 83vh;
+    background-color: #d43b3b;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 55%;
+}
+
 .profile-info {
     width: 75vw;
     height: 65vh;
