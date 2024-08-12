@@ -289,12 +289,12 @@ button:hover {
 
 /* Modal Content */
 .modal-content {
-    height: 82vh;
+    height: 85vh;
     background-color: #d43b3b;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 55%;
+    width: 85%;
 }
 
 
