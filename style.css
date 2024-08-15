@@ -278,7 +278,7 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.4);
 
     /* Black w/ opacity */
-   .get-ticket {
+    .get-ticket {
         position: absolute;
         top: 125px;
         left: 43vw;
@@ -381,8 +381,8 @@ button:hover {
 /* From Uiverse.io by zanina-yassine */
 .card {
     position: absolute;
-    top: 175px;
-    left: 450px;
+    top: 190px;
+    left: 500px;
     width: fit-content;
     height: fit-content;
     background: #ffffff;
@@ -548,7 +548,7 @@ body {
     align-items: center;
     justify-content: center;
     left: 1vw;
-    top: 39vh;
+    top: 45vh;
 }
 
 .signin {
@@ -558,6 +558,7 @@ body {
     left: 65vw;
     border-radius: 8px;
     padding: 10px;
+    font-size: 30px;
 }
 
 .signin:hover {
